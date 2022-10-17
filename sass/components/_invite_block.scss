@@ -1,0 +1,10 @@
+.invite-block {
+  margin-left: 70px;
+
+  &__join {
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}

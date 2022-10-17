@@ -1,0 +1,20 @@
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  &__location {
+    color: var(--primary-white-color);
+    text-decoration: none;
+  }
+  &__contacts {
+    color: var(--footer-contacts-color);
+    text-decoration: none;
+  }
+  &__location:hover,
+  &__location:focus,
+  &__contacts:hover,
+  &__contacts:focus {
+    color: var(--accent-color);
+  }
+}
