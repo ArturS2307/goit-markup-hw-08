@@ -1,6 +1,15 @@
-// .site-nav {
-//   display: flex;
-// }
+.site-nav {
+  display: flex;
+  margin-left: 87px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 92px;
+  }
+}
 .site-nav__item {
   margin-right: 50px;
 

@@ -1,7 +1,10 @@
 .footer-icons {
   margin-top: 20px;
-  margin-right: 93px;
+
   display: flex;
+  justify-content: center;
+
+  // margin-right: 93px;
 
   &__icon {
     fill: var(--primary-white-color);

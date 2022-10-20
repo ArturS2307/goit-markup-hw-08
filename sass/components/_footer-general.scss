@@ -4,6 +4,12 @@
   padding-bottom: 60px;
 }
 .footer__container {
-  // display: flex;
-  align-items: baseline;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    text-align: left;
+  }
 }

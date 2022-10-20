@@ -1,11 +1,24 @@
 .header {
   border-bottom: 1px solid #ececec;
+  position: relative;
+
+  &__container {
+    display: flex;
+    position: relative;
+    // top: 100%;
+    // left: 0;
+  }
+
+  // &__container {
+  //   display: none;
+  // }
+
   // &__container {
   //   display: flex;
   //   align-items: center;
   // }
-  // &__nav {
-  //   display: flex;
-  //   align-items: center;
-  // }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
 }

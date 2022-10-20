@@ -8,6 +8,11 @@
   line-height: 1.19;
   text-decoration: none;
 
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
   &__decor--accent {
     color: var(--accent-color);
   }

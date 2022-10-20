@@ -1,17 +1,19 @@
 .subscribe-form__text {
-  display: flex;
+  // display: flex;
   text-transform: uppercase;
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   color: var(--primary-white-color);
 }
-.subscribe-form__box {
-  display: flex;
-}
+// .subscribe-form__box {
+//   display: flex;
+// }
 .subscribe-form__email {
-  width: 358px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   padding-left: 16px;
   background-color: var(--primary-background-color);
@@ -19,6 +21,10 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-right: 12px;
+
+  @media screen and (min-width: $desktop) {
+    width: 368px;
+  }
 }
 .subscribe-form__email::placeholder {
   color: rgba(255, 255, 255, 0.6);

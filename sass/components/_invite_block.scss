@@ -1,5 +1,14 @@
 .invite-block {
-  margin-left: 70px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 165px;
+  }
+  // margin-left: 70px;
 
   &__join {
     text-transform: uppercase;
