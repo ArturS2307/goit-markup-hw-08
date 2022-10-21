@@ -1,3 +1,10 @@
+.subscribe-form__box {
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .subscribe-form__text {
   // display: flex;
   text-transform: uppercase;
@@ -6,9 +13,7 @@
   line-height: 1.14;
   color: var(--primary-white-color);
 }
-// .subscribe-form__box {
-//   display: flex;
-// }
+
 .subscribe-form__email {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -22,7 +27,7 @@
   border-radius: 4px;
   margin-right: 12px;
 
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     width: 368px;
   }
 }

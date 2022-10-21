@@ -1,25 +1,18 @@
 .advantages {
   gap: 30px;
 
-  @media screen and (min-width: $tablet) {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: $desktop) {
-    display: flex;
-  }
-
   &__item {
-    @media screen and (min-width: $tablet) {
+    @include tablet {
       flex-basis: calc((100% - 30px) / 2);
     }
-    @media screen and (min-width: $desktop) {
+    @include desktop {
       flex-basis: calc((100% - 3 * 30px) / 4);
     }
-  }
-  &__item:not(:last-child) {
-    margin-bottom: 30px;
   }
   &__icon-wrap {
     display: flex;
@@ -39,7 +32,7 @@
     text-transform: uppercase;
     color: var(--secondary-text-color);
 
-    @media screen and (min-width: $tablet) {
+    @include tablet {
       text-align: left;
     }
   }

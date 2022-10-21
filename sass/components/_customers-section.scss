@@ -6,11 +6,11 @@
   &__item {
     flex-basis: calc((100% - 30px) / 2);
 
-    @media screen and (min-width: $tablet) {
+    @include tablet {
       flex-basis: calc((100% - 60px) / 3);
     }
 
-    @media screen and (min-width: $desktop) {
+    @include desktop {
       flex-basis: calc((100% - 150px) / 6);
     }
   }

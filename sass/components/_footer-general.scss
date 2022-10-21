@@ -6,8 +6,9 @@
 .footer__container {
   text-align: center;
 
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: baseline;
     text-align: left;

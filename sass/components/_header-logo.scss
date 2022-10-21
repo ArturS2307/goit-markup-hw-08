@@ -1,5 +1,6 @@
 .logo {
-  // margin-right: 93px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 
   font-family: var(--secondary-font);
   color: var(--primary-black-color);
@@ -8,9 +9,8 @@
   line-height: 1.19;
   text-decoration: none;
 
-  @media screen and (max-width: 767px) {
-    margin-top: 16px;
-    margin-bottom: 16px;
+  @include tablet {
+    margin: 0;
   }
 
   &__decor--accent {

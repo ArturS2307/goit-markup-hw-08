@@ -149,30 +149,39 @@
           <ul class="activity">
             <li class="activity__item">
               <p class="activity__text">десктопні додатки</p>
-              <img
-                src="./images/service-1.jpg"
-                alt="service-1"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop-app.jpg    1x,
+                    ./images/desktop-app@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img src="./images/desktop-app.jpg" alt="desktop-app" />
+              </picture>
             </li>
             <li class="activity__item">
               <p class="activity__text">мобільні додатки</p>
-              <img
-                src="./images/service-2.jpg"
-                alt="service-2"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/mob-app.jpg 1x, ./images/mob-app@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img src="./images/mob-app.jpg" alt="mob-app" />
+              </picture>
             </li>
             <li class="activity__item">
               <p class="activity__text">дизайнерські рішення</p>
-              <img
-                src="./images/service-3.jpg"
-                alt="service-3"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/design-sol.jpg    1x,
+                    ./images/design-sol@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img src="./images/design-sol.jpg" alt="design-sol" />
+              </picture>
             </li>
           </ul>
         </div>
@@ -183,12 +192,35 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="profile-list">
             <li class="profile-list__item">
-              <img
-                src="./images/product-designer.jpg"
-                alt="product designer photo"
-                width="270"
-                height="260"
-              />
+              <picture class="profile-list__picture">
+                <source
+                  srcset="
+                    ./images/team/product-designer-desk.jpg    1x,
+                    ./images/team/product-designer-desk@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/product-designer-tab.jpg    1x,
+                    ./images/team/product-designer-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/product-designer-mob.jpg    1x,
+                    ./images/team/product-designer-mob@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <img
+                  class="profile-list__img"
+                  src="./images/team/product-designer-mob.jpg"
+                  alt="product-designer"
+                />
+              </picture>
               <div class="profile-list__wrap">
                 <h3 class="profile-list__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="profile-list__spec">Product Designer</p>
@@ -225,12 +257,35 @@
               </div>
             </li>
             <li class="profile-list__item">
-              <img
-                src="./images/frontend-developer.jpg"
-                alt="frontend developer photo"
-                width="270"
-                height="260"
-              />
+              <picture class="profile-list__picture">
+                <source
+                  srcset="
+                    ./images/team/frontend-developer-desk.jpg    1x,
+                    ./images/team/frontend-developer-desk@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/frontend-developer-tab.jpg    1x,
+                    ./images/team/frontend-developer-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/frontend-developer-mob.jpg    1x,
+                    ./images/team/frontend-developer-mob@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <img
+                  class="profile-list__img"
+                  src="./images/team/frontend-developer-mob.jpg"
+                  alt="frontend-developer"
+                />
+              </picture>
               <div class="profile-list__wrap">
                 <h3 class="profile-list__name">Ольга Рєпіна</h3>
                 <p lang="en" class="profile-list__spec">Frontend Developer</p>
@@ -267,12 +322,35 @@
               </div>
             </li>
             <li class="profile-list__item">
-              <img
-                src="./images/marketing.jpg"
-                alt="marketing specialist photo"
-                width="270"
-                height="260"
-              />
+              <picture class="profile-list__picture">
+                <source
+                  srcset="
+                    ./images/team/marketing-desk.jpg    1x,
+                    ./images/team/marketing-desk@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/marketing-tab.jpg    1x,
+                    ./images/team/marketing-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/marketing-mob.jpg    1x,
+                    ./images/team/marketing-mob@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <img
+                  class="profile-list__img"
+                  src="./images/team/marketing-mob.jpg"
+                  alt="marketing"
+                />
+              </picture>
               <div class="profile-list__wrap">
                 <h3 class="profile-list__name">Микола Тарасов</h3>
                 <p lang="en" class="profile-list__spec">Marketing</p>
@@ -309,12 +387,35 @@
               </div>
             </li>
             <li class="profile-list__item">
-              <img
-                src="./images/ui-designer.jpg"
-                alt="UI designer photo"
-                width="270"
-                height="260"
-              />
+              <picture class="profile-list__picture">
+                <source
+                  srcset="
+                    ./images/team/ui-designer-desk.jpg    1x,
+                    ./images/team/ui-designer-desk@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/ui-designer-tab.jpg    1x,
+                    ./images/team/ui-designer-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/ui-designer-mob.jpg    1x,
+                    ./images/team/ui-designer-mob@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <img
+                  class="profile-list__img"
+                  src="./images/team/ui-designer-mob.jpg"
+                  alt="ui-designer"
+                />
+              </picture>
               <div class="profile-list__wrap">
                 <h3 class="profile-list__name">Михайло Єрмаков</h3>
                 <p lang="en" class="profile-list__spec">UI Designer</p>
@@ -406,7 +507,7 @@
     </main>
     <!-- Mobile-menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-button js-close-menu">
+      <button type="button" class="menu-button js-close-menu">
         <svg class="menu-button__svg" width="40" height="40">
           <use
             class="menu-button__icon-menu"
@@ -428,17 +529,33 @@
         <li class="mobile-menu__item">
           <a href="" class="mobile-menu__link">Контакти</a>
         </li>
-        <li class="contacts__item">
-          <a href="tel:+380961111111" class="mobile-menu__link"
-            >+38 096 111 11 11</a
+      </ul>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a href="tel:+380961111111" class="mobile-contacts__link"
+            >+ 38 096 111 11 11</a
           >
         </li>
-        <li class="mobile-menu__item">
+        <li class="mobile-contacts__item">
           <a
             href="mailto:info@devstudio.com"
-            class="mobile-menu__link mobile-menu__link--font-size"
+            class="mobile-contacts__link mobile-contacts__link--font-size"
             >info@devstudio.com</a
           >
+        </li>
+      </ul>
+      <ul class="social-networks">
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="">Instagram</a>
+        </li>
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="">Twitter</a>
+        </li>
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="">Facebook</a>
+        </li>
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="">LinkedIn</a>
         </li>
       </ul>
     </div>

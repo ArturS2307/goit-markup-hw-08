@@ -1,6 +1,6 @@
 .services-section {
   display: none;
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     display: block;
     padding: 94px 0;
   }
