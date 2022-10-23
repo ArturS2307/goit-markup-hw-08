@@ -24,6 +24,19 @@
           <a href="./index.html" class="logo">
             <span class="logo__decor logo__decor--accent">Web</span>Studio</a
           >
+          <button
+            class="menu-button menu-button--position js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use
+                class="menu-button__icon-menu"
+                href="./images/icons.svg#menu_40px"
+              ></use>
+            </svg>
+          </button>
+
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Студія</a>
@@ -42,16 +55,6 @@
         </nav>
         <ul class="contacts">
           <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="contacts__link"
-              ><svg class="contacts__icon" width="16" height="12">
-                <use
-                  href="./images/icons.svg#envelope-hover"
-                  class="contacts__path"
-                ></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
             <a href="tel:+380961111111" class="contacts__link"
               ><svg class="contacts__icon" width="10" height="16">
                 <use
@@ -59,6 +62,18 @@
                   class="contacts__path"
                 ></use></svg
               >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts__link contacts__link--font-size"
+              ><svg class="contacts__icon" width="16" height="12">
+                <use
+                  href="./images/icons.svg#envelope-hover"
+                  class="contacts__path"
+                ></use></svg
+              >info@devstudio.com</a
             >
           </li>
         </ul>
@@ -105,13 +120,35 @@
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
-                  <img
-                    src="./images/work-1.jpg"
-                    alt="first example of our work"
-                    width="370"
-                    height="294"
-                    class="cards__image"
-                  />
+                  <picture class="cards__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/card-1-desk.jpg    1x,
+                        ./images/portfolio/card-1-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-1-tab.jpg    1x,
+                        ./images/portfolio/card-1-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-1-mob.jpg    1x,
+                        ./images/portfolio/card-1-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      class="cards__image"
+                      src="./images/portfolio/card-1-mob.jpg"
+                      alt="first example of our work"
+                    />
+                  </picture>
                 </div>
                 <div class="cards__border">
                   <h2 class="cards__name">Технокряк</h2>
@@ -127,16 +164,38 @@
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
-                  <img
-                    src="./images/work-2.jpg"
-                    alt="second example of our work"
-                    width="370"
-                    height="294"
-                    class="cards__image"
-                  />
+                  <picture class="cards__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/card-2-desk.jpg    1x,
+                        ./images/portfolio/card-2-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-2-tab.jpg    1x,
+                        ./images/portfolio/card-2-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-2-mob.jpg    1x,
+                        ./images/portfolio/card-2-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      class="cards__image"
+                      src="./images/portfolio/card-2-mob.jpg"
+                      alt="second example of our work"
+                    />
+                  </picture>
                 </div>
                 <div class="cards__border">
-                  <h2 class="cards__name">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="cards__name">Постер New Orlean vs Golden Stars</h2>
                   <p class="cards__type">Дизайн</p>
                 </div>
               </a>
@@ -149,13 +208,35 @@
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
-                  <img
-                    src="./images/work-3.jpg"
-                    alt="third example of our work"
-                    width="370"
-                    height="294"
-                    class="cards__image"
-                  />
+                  <picture class="cards__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/card-3-desk.jpg    1x,
+                        ./images/portfolio/card-3-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-3-tab.jpg    1x,
+                        ./images/portfolio/card-3-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-3-mob.jpg    1x,
+                        ./images/portfolio/card-3-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      class="cards__image"
+                      src="./images/portfolio/card-3-mob.jpg"
+                      alt="third example of our work"
+                    />
+                  </picture>
                 </div>
                 <div class="cards__border">
                   <h2 class="cards__name">Ресторан Seafood</h2>
@@ -171,13 +252,35 @@
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
-                  <img
-                    src="./images/work-4.jpg"
-                    alt="fourth example of our work"
-                    width="370"
-                    height="294"
-                    class="cards__image"
-                  />
+                  <picture class="cards__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/card-4-desk.jpg    1x,
+                        ./images/portfolio/card-4-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-4-tab.jpg    1x,
+                        ./images/portfolio/card-4-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-4-mob.jpg    1x,
+                        ./images/portfolio/card-4-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      class="cards__image"
+                      src="./images/portfolio/card-4-mob.jpg"
+                      alt="fourth example of our work"
+                    />
+                  </picture>
                 </div>
 
                 <div class="cards__border">
@@ -194,13 +297,35 @@
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
-                  <img
-                    src="./images/work-5.jpg"
-                    alt="fifth example of our work"
-                    width="370"
-                    height="294"
-                    class="cards__image"
-                  />
+                  <picture class="cards__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/card-5-desk.jpg    1x,
+                        ./images/portfolio/card-5-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-5-tab.jpg    1x,
+                        ./images/portfolio/card-5-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-5-mob.jpg    1x,
+                        ./images/portfolio/card-5-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      class="cards__image"
+                      src="./images/portfolio/card-5-mob.jpg"
+                      alt="fifth example of our work"
+                    />
+                  </picture>
                 </div>
 
                 <div class="cards__border">
@@ -217,13 +342,35 @@
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
-                  <img
-                    src="./images/work-6.jpg"
-                    alt="sixth example of our work"
-                    width="370"
-                    height="294"
-                    class="cards__image"
-                  />
+                  <picture class="cards__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/card-6-desk.jpg    1x,
+                        ./images/portfolio/card-6-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-6-tab.jpg    1x,
+                        ./images/portfolio/card-6-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-6-mob.jpg    1x,
+                        ./images/portfolio/card-6-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      class="cards__image"
+                      src="./images/portfolio/card-6-mob.jpg"
+                      alt="sixth example of our work"
+                    />
+                  </picture>
                 </div>
 
                 <div class="cards__border">
@@ -240,13 +387,35 @@
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
-                  <img
-                    src="./images/work-7.jpg"
-                    alt="seventh example of our work"
-                    width="370"
-                    height="294"
-                    class="cards__image"
-                  />
+                  <picture class="cards__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/card-7-desk.jpg    1x,
+                        ./images/portfolio/card-7-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-7-tab.jpg    1x,
+                        ./images/portfolio/card-7-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-7-mob.jpg    1x,
+                        ./images/portfolio/card-7-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      class="cards__image"
+                      src="./images/portfolio/card-7-mob.jpg"
+                      alt="seventh example of our work"
+                    />
+                  </picture>
                 </div>
 
                 <div class="cards__border">
@@ -263,13 +432,35 @@
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
-                  <img
-                    src="./images/work-8.jpg"
-                    alt="eighth example of our work"
-                    width="370"
-                    height="294"
-                    class="cards__image"
-                  />
+                  <picture class="cards__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/card-8-desk.jpg    1x,
+                        ./images/portfolio/card-8-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-8-tab.jpg    1x,
+                        ./images/portfolio/card-8-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-8-mob.jpg    1x,
+                        ./images/portfolio/card-8-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      class="cards__image"
+                      src="./images/portfolio/card-8-mob.jpg"
+                      alt="eight example of our work"
+                    />
+                  </picture>
                 </div>
 
                 <div class="cards__border">
@@ -286,13 +477,35 @@
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
-                  <img
-                    src="./images/work-9.jpg"
-                    alt="ninth example of our work"
-                    width="370"
-                    height="294"
-                    class="cards__image"
-                  />
+                  <picture class="cards__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/card-9-desk.jpg    1x,
+                        ./images/portfolio/card-9-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-9-tab.jpg    1x,
+                        ./images/portfolio/card-9-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/card-9-mob.jpg    1x,
+                        ./images/portfolio/card-9-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      class="cards__image"
+                      src="./images/portfolio/card-9-mob.jpg"
+                      alt="nineth example of our work"
+                    />
+                  </picture>
                 </div>
 
                 <div class="cards__border">
@@ -305,69 +518,126 @@
         </div>
       </section>
     </main>
+    <!-- Mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-button js-close-menu">
+        <svg class="menu-button__svg" width="40" height="40">
+          <use
+            class="menu-button__icon-menu"
+            href="./images/icons.svg#close_40px"
+          ></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="mobile-menu__link">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a
+            href="./portfolio.html"
+            class="mobile-menu__link mobile-menu__link--current"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a href="tel:+380961111111" class="mobile-contacts__link"
+            >+ 38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts__item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="mobile-contacts__link mobile-contacts__link--font-size"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="social-networks">
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="">Instagram</a>
+        </li>
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="">Twitter</a>
+        </li>
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="">Facebook</a>
+        </li>
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer-contacts">
-          <a href="./index.html" class="logo logo--white-color"
-            ><span class="logo__decor logo__decor--accent">Web</span>Studio</a
-          >
-          <address>
-            <ul class="address">
-              <li>
-                <a
-                  href="https://goo.gl/maps/e4fJgJ4cEz9HKz7BA"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="address__location"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="tablet-wrap">
+          <div class="footer-contacts">
+            <a href="./index.html" class="logo logo--white-color"
+              ><span class="logo__decor logo__decor--accent">Web</span>Studio</a
+            >
+            <address>
+              <ul class="address">
+                <li>
+                  <a
+                    href="https://goo.gl/maps/e4fJgJ4cEz9HKz7BA"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="address__location"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:info@devstudio.com" class="address__contacts"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+380961111111" class="address__contacts"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="invite-block">
+            <b class="invite-block__join">приєднуйтесь</b>
+            <ul class="footer-icons">
+              <li class="footer-icons__item">
+                <a class="footer-icons__link" href="#">
+                  <svg class="footer-icons__icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="mailto:info@devstudio.com" class="address__contacts"
-                  >info@devstudio.com</a
-                >
+              <li class="footer-icons__item">
+                <a class="footer-icons__link" href="">
+                  <svg class="footer-icons__icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a href="tel:+380961111111" class="address__contacts"
-                  >+38 096 111 11 11</a
-                >
+              <li class="footer-icons__item">
+                <a class="footer-icons__link" href="">
+                  <svg class="footer-icons__icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-icons__item">
+                <a class="footer-icons__link" href="">
+                  <svg class="footer-icons__icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="invite-block">
-          <b class="invite-block__join">приєднуйтесь</b>
-          <ul class="footer-icons">
-            <li class="footer-icons__item">
-              <a class="footer-icons__link" href="#">
-                <svg class="footer-icons__icon" width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-icons__item">
-              <a class="footer-icons__link" href="">
-                <svg class="footer-icons__icon" width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-icons__item">
-              <a class="footer-icons__link" href="">
-                <svg class="footer-icons__icon" width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-icons__item">
-              <a class="footer-icons__link" href="">
-                <svg class="footer-icons__icon" width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <form class="subscribe-form">
           <label for="user_mail" class="subscribe-form__text"
             >підпишіться на розсилку</label
@@ -390,5 +660,12 @@
         </form>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
